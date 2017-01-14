@@ -5,7 +5,7 @@ function getUTCTime(callback: (err: boolean, time: {utc: Date, local: Date} | nu
  let tag = document.createElement("script");
  let before, after: Date;
 
- tag.src = 'http://www.timeapi.org/utc/now.json?callback=utcCallback';
+ tag.src = 'https://www.timeapi.org/utc/now.json?callback=utcCallback';
  window.utcCallback = function(obj: any) {
   after = new Date();
   if (obj.dateString) {
