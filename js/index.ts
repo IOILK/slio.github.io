@@ -45,5 +45,5 @@ function start() {
   }, 500);
  });
 }
-window.onload = start;
+//window.onload = start;
 
