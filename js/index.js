@@ -22,7 +22,7 @@ function getUTCTime(callback) {
  frame.width  = document.body.clientWidth;
  frame.height = document.body.clientHeight - 50;
 } */
-function start() {
+function showServrTime() {
     //resize()
     var timespan = document.getElementById('time');
     var offset = null;
@@ -41,4 +41,10 @@ function start() {
         }, 500);
     });
 }
-window.onload = start;
+function showLocalTime() {
+    var timespan = document.getElementById('time');
+    setInterval(function () {
+        timespan.innerText = new Date().toString();
+    }, 500);
+}
+window.onload = showLocalTime;

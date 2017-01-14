@@ -27,7 +27,7 @@ function getUTCTime(callback: (err: boolean, time: {utc: Date, local: Date} | nu
  frame.height = document.body.clientHeight - 50;
 } */
 
-function start() {
+function showServrTime() {
  //resize()
  let timespan = document.getElementById('time');
  let offset : number | null = null;
@@ -45,5 +45,12 @@ function start() {
   }, 500);
  });
 }
-//window.onload = start;
 
+function showLocalTime() {
+ let timespan = document.getElementById('time');
+ setInterval(() =>{
+  timespan.innerText = new Date().toString();
+ }, 500)
+}
+
+window.onload = showLocalTime;
