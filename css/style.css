@@ -1,0 +1,20 @@
+body{
+ font-family:"Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+ margin: 50px;
+ margin-top: 20px;
+}
+.time {
+ font-size:xx-large;
+ font-weight: bold;
+}
+.info {
+ font-size:x-large;
+ background-color: #0af;
+}
+div.intro h3{
+ font-size: x-large;
+}
+div.intro h2{
+ font-size: 48px;
+ font-weight: normal;
+}
