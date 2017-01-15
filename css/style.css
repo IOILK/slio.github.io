@@ -10,6 +10,7 @@ body{
 .info {
  font-size:x-large;
  background-color: #0af;
+ margin-bottom: 10px;
 }
 div.intro h3{
  font-size: x-large;
