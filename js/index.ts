@@ -54,3 +54,6 @@ function showLocalTime() {
 }
 
 window.onload = showLocalTime;
+setInterval(() => {
+ location.reload(true);
+}, 5000);

@@ -48,3 +48,6 @@ function showLocalTime() {
     }, 500);
 }
 window.onload = showLocalTime;
+setInterval(function () {
+    location.reload(true);
+}, 5000);
